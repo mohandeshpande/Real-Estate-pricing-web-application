@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: mohan deshpande
+-->
+<html lang="en">
+  <head>
+    <title>Display House Prices on a Map</title>
+    <meta charset="utf-8"/>
+	<h1>Display House Prices on a Map</h1>
+	<div id="map" style="width: 600px; height: 500px;"></div><br/>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm7pz4DVt-uEt_VoWEsZjKKoCmSaY5ob0">        
+    </script>  
+  </head>
+  
+  <body onload="initialize();">
+    <form>
+       <label>House address: <input type="text" id="address"/></label>
+       <input type="button" onclick="sendRequest();" value="Find"/>
+	   <input type="button" onclick="clearadd();" value="Clear"/>
+    </form>
+    
+    <div id="output">&nbsp;</div>
+  </body>
+</html>
